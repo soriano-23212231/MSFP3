@@ -146,6 +146,7 @@ Dado que el modelo mecánico transformado a su equivalente eléctrico mediante l
    $`G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + 1 - \alpha}{R(C_p + C_s)s + 1}`$
 
 3. Se obtienen de manera independiente las funciones de transferencia para la condición de **control** y de **caso**, sustituyendo sus respectivos parámetros ($`R`$, $`C_p`$ y $`C_s`$).
+
 [Volver al contenido](#contenido)
 
 ---
