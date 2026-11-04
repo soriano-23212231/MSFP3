@@ -1,19 +1,19 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=soriano-23212231/MSFP3)
 # Práctica 3 — Modelado y control del sistema musculoesquelético
-Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana[cite: 1, 10, 11, 12]. Esta práctica integra el modelado viscoelástico, analogías electromecánicas mediante la analogía fuerza-voltaje, análisis temporal y de estabilidad, diseño de controladores clásicos (PID), simulación computacional (*in silico*) y verificación cruzada de resultados.
+Repositorio académico de la asignatura Modelado de Sistemas Fisiológicos, correspondiente al programa de Ingeniería Biomédica del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana[cite: 1, 10, 11, 12]. Esta práctica integra el modelado viscoelástico, analogías electromecánicas mediante la analogía fuerza-voltaje, análisis temporal y de estabilidad, diseño de controladores clásicos (PID), simulación computacional (*in silico*) y verificación cruzada de resultados.
 
-El caso de estudio representa un **modelo mecánico simplificado del sistema musculoesquelético** basado en la formulación de Khoo. Se busca modelizar, simular y controlar la respuesta dinámica de un compartimento muscular comparando el estado de un individuo sano (control) con un caso simulado de atrofia muscular, evaluando la estrategia de control orientada a reducir las diferencias entre ambas respuestas.
+El caso de estudio representa un modelo mecánico simplificado del sistema musculoesquelético basado en la formulación de Khoo. Se busca modelizar, simular y controlar la respuesta dinámica de un compartimento muscular comparando el estado de un individuo sano (control) con un caso simulado de atrofia muscular, evaluando la estrategia de control orientada a reducir las diferencias entre ambas respuestas.
 
-**Docente:** Dr. Paul Antonio Valle Trujillo  
-**Correo:** paul.valle@tectijuana.edu.mx  
-**Departamento:** Ingeniería Eléctrica y Electrónica  
-**Institución:** Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
-**Asignatura:** Modelado de Sistemas Fisiológicos  
-**Programa:** Ingeniería Biomédica  
-**Estudiante:** Judith Valeria Soriano Angeles · 23212231 · l23212231@tectijuana.edu.mx
+Docente: Dr. Paul Antonio Valle Trujillo  
+Correo: paul.valle@tectijuana.edu.mx  
+Departamento: Ingeniería Eléctrica y Electrónica  
+Institución: Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
+Asignatura: Modelado de Sistemas Fisiológicos  
+Programa: Ingeniería Biomédica  
+Estudiante: Judith Valeria Soriano Angeles · 23212231 · l23212231@tectijuana.edu.mx
 
-**Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020  
-**Sede:** Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
+Repositorio de la asignatura: https://github.com/DrPaulValle/MSF-IBF1020  
+Sede: Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
 
 <a id="contenido"></a>
 ## Contenido
@@ -42,11 +42,11 @@ El caso de estudio representa un **modelo mecánico simplificado del sistema mus
 <a id="resumen"></a>
 ## Resumen
 
-La práctica tiene como propósito **analizar, simular y controlar un modelo mecánico simplificado del sistema musculoesquelético** mediante técnicas de control clásico y analogías físicas. El comportamiento viscoelástico del tejido se describe utilizando elementos contráctiles, amortiguadores viscosos y resortes (elementos en paralelo y en serie). Mediante la analogía **fuerza-voltaje**, el sistema mecánico se transforma en un circuito eléctrico equivalente, lo que facilita su formulación matemática en ecuaciones diferenciales, obtención de funciones de transferencia y experimentación *in silico*.
+La práctica tiene como propósito analizar, simular y controlar un modelo mecánico simplificado del sistema musculoesquelético mediante técnicas de control clásico y analogías físicas. El comportamiento viscoelástico del tejido se describe utilizando elementos contráctiles, amortiguadores viscosos y resortes (elementos en paralelo y en serie). Mediante la analogía fuerza-voltaje, el sistema mecánico se transforma en un circuito eléctrico equivalente, lo que facilita su formulación matemática en ecuaciones diferenciales, obtención de funciones de transferencia y experimentación *in silico*.
 
-Se estudian dos condiciones fisiológicas: un **individuo sano (control)** y un **caso simulado de atrofia muscular**, este último representado por un incremento significativo en la resistencia $R$ del amortiguador. Utilizando la respuesta del individuo sano como referencia, se diseña e implementa un sistema de control con retroalimentación empleando un controlador PID, sintonizado para aproximar la respuesta del caso a la del control. Los resultados obtenidos en MATLAB/Simulink y Simscape Electrical se corroboran mediante un cuaderno computacional y un script en Python, complementándose con una ilustración detallada en BioRender.
+Se estudian dos condiciones fisiológicas: un individuo sano (control) y un caso simulado de atrofia muscular, este último representado por un incremento significativo en la resistencia $R$ del amortiguador. Utilizando la respuesta del individuo sano como referencia, se diseña e implementa un sistema de control con retroalimentación empleando un controlador PID, sintonizado para aproximar la respuesta del caso a la del control. Los resultados obtenidos en MATLAB/Simulink y Simscape Electrical se corroboran mediante un cuaderno computacional y un script en Python, complementándose con una ilustración detallada en BioRender.
 
-**Palabras clave:** Sistema musculoesquelético; Analogía fuerza-voltaje; Modelo viscoelástico; Atrofia muscular; Controlador PID; Simscape Electrical; BioRender.
+Palabras clave: Sistema musculoesquelético; Analogía fuerza-voltaje; Modelo viscoelástico; Atrofia muscular; Controlador PID; Simscape Electrical; BioRender.
 
 [Volver al contenido](#contenido)
 
@@ -81,7 +81,7 @@ Modelar, simular y controlar la dinámica de un sistema musculoesquelético medi
 <a id="temario"></a>
 ## Relación con el temario
 
-La práctica integra contenidos correspondientes a las unidades fundamentales de la asignatura **Modelado de Sistemas Fisiológicos (IBF-1020)**:
+La práctica integra contenidos correspondientes a las unidades fundamentales de la asignatura Modelado de Sistemas Fisiológicos (IBF-1020):
 
 | Unidad | Área | Contenidos aplicados |
 |---|---|---|
@@ -98,7 +98,7 @@ La práctica integra contenidos correspondientes a las unidades fundamentales de
 
 El sistema musculoesquelético se representa mediante el modelo mecánico viscoelástico de Khoo[cite: 1], el cual incluye una fuerza activa $F_0(t)$ desarrollada por el elemento contráctil, un amortiguador viscoso ($R$) que representa la disipación del tejido, y elementos elásticos en paralelo ($C_p$) y en serie ($C_s$) asociados con la compliancia del sarcolema y los tendones[cite: 1].
 
-Para facilitar el análisis circuital, se utiliza la **analogía fuerza-voltaje**, estableciendo las siguientes correspondencias[cite: 1]:
+Para facilitar el análisis circuital, se utiliza la analogía fuerza-voltaje, estableciendo las siguientes correspondencias[cite: 1]:
 
 | Sistema mecánico | Sistema eléctrico equivalente |
 |---|---|
@@ -129,10 +129,10 @@ La diferencia entre el individuo sano y el caso de atrofia muscular se modela me
 <a id="modelo"></a>
 ## Formulación matemática
 
-1. **Ecuaciones de equilibrio y del sistema:** A partir de las restricciones mecánicas del modelo de elementos en serie y paralelo, y aplicando las leyes constitutivas correspondientes, se obtienen las ecuaciones diferenciales ordinarias que rigen el desplazamiento y la fuerza transmitida.
-2. **Función de transferencia:** Aplicando la transformada de Laplace con condiciones iniciales nulas y el principio de superposición, se determina la función de transferencia del sistema expresada en términos del desplazamiento de salida respecto a la fuerza aplicada[cite: 1]:
+1. Ecuaciones de equilibrio y del sistema: A partir de las restricciones mecánicas del modelo de elementos en serie y paralelo, y aplicando las leyes constitutivas correspondientes, se obtienen las ecuaciones diferenciales ordinarias que rigen el desplazamiento y la fuerza transmitida.
+2. Función de transferencia: Aplicando la transformada de Laplace con condiciones iniciales nulas y el principio de superposición, se determina la función de transferencia del sistema expresada en términos del desplazamiento de salida respecto a la fuerza aplicada[cite: 1]:
    $$G(s) = \frac{X(s)}{F(s)}$$
-3. Se obtienen de manera independiente las funciones de transferencia para la condición de **control** y de **caso** sustituyendo sus respectivos parámetros paramétricos[cite: 1].
+3. Se obtienen de manera independiente las funciones de transferencia para la condición de control y de caso sustituyendo sus respectivos parámetros paramétricos[cite: 1].
 
 [Volver al contenido](#contenido)
 
@@ -141,8 +141,8 @@ La diferencia entre el individuo sano y el caso de atrofia muscular se modela me
 <a id="analisis"></a>
 ## Análisis temporal y de estabilidad
 
-- **Análisis de estabilidad:** Se determinan los polos de las funciones de transferencia para los modelos de control y caso, evaluando su ubicación en el plano complejo para garantizar la estabilidad del sistema y analizar el efecto del incremento del amortiguamiento equivalente sobre la dinámica transitoria[cite: 1].
-- **Error en estado estacionario:** Se define la señal de error para el sistema de control como la diferencia entre el desplazamiento de referencia del individuo sano y el del caso[cite: 1]:
+- Análisis de estabilidad: Se determinan los polos de las funciones de transferencia para los modelos de control y caso, evaluando su ubicación en el plano complejo para garantizar la estabilidad del sistema y analizar el efecto del incremento del amortiguamiento equivalente sobre la dinámica transitoria[cite: 1].
+- Error en estado estacionario: Se define la señal de error para el sistema de control como la diferencia entre el desplazamiento de referencia del individuo sano y el del caso[cite: 1]:
   $$e(t) = x_{\text{control}}(t) - x_{\text{caso}}(t)$$
   Analizando analíticamente el comportamiento final para evaluar el rendimiento del esquema de retroalimentación[cite: 1].
 
@@ -163,9 +163,9 @@ Las simulaciones se ejecutan en el intervalo temporal $t \in [0, 10]\,\mathrm{s}
 ## Implementación en MATLAB, Simulink y Simscape Electrical
 
 El desarrollo computacional abarca tres formas de representación en el entorno MATLAB/Simulink[cite: 1]:
-1. **Modelo matemático en Simulink:** Implementado a partir de las ecuaciones diferenciales del sistema[cite: 1].
-2. **Función de transferencia en Simulink:** Implementada mediante bloques de función de transferencia directa para control y caso[cite: 1].
-3. **Simscape Electrical:** Construcción del circuito eléctrico equivalente utilizando componentes pasivos ($R$ y $C$) para verificar la analogía electromecánica[cite: 1].
+1. Modelo matemático en Simulink: Implementado a partir de las ecuaciones diferenciales del sistema[cite: 1].
+2. Función de transferencia en Simulink: Implementada mediante bloques de función de transferencia directa para control y caso[cite: 1].
+3. Simscape Electrical: Construcción del circuito eléctrico equivalente utilizando componentes pasivos ($R$ y $C$) para verificar la analogía electromecánica[cite: 1].
 
 ### Cuaderno computacional (`.mlx`)
 Permite automatizar la ejecución de los modelos en Simulink, almacenar las respuestas en el *Workspace* y generar gráficos comparativos de las condiciones de control, caso en lazo abierto y caso con controlador, guardando los resultados automáticamente en formato PDF[cite: 1].
@@ -177,10 +177,10 @@ Permite automatizar la ejecución de los modelos en Simulink, almacenar las resp
 <a id="pid"></a>
 ## Control en lazo cerrado y sintonización PID
 
-Se implementa un esquema de control por retroalimentación empleando un bloque **PID Controller** en la rama del paciente (caso), utilizando la respuesta del individuo sano como señal de referencia[cite: 1]. 
+Se implementa un esquema de control por retroalimentación empleando un bloque PID Controller en la rama del paciente (caso), utilizando la respuesta del individuo sano como señal de referencia[cite: 1]. 
 
-- **Sintonización:** Mediante la herramienta **Tune** del bloque PID en Simulink, se ajustan las ganancias $k_P$, $k_I$ y $k_D$ para lograr una respuesta estable y minimizar el error dinámico[cite: 1].
-- **Análisis en lazo cerrado:** Se compara gráficamente la evolución temporal entre $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$, evaluando cambios en amplitud, velocidad de respuesta y amortiguamiento[cite: 1].
+- Sintonización: Mediante la herramienta Tune del bloque PID en Simulink, se ajustan las ganancias $k_P$, $k_I$ y $k_D$ para lograr una respuesta estable y minimizar el error dinámico[cite: 1].
+- Análisis en lazo cerrado: Se compara gráficamente la evolución temporal entre $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$, evaluando cambios en amplitud, velocidad de respuesta y amortiguamiento[cite: 1].
 
 [Volver al contenido](#contenido)
 
@@ -189,7 +189,7 @@ Se implementa un esquema de control por retroalimentación empleando un bloque *
 <a id="python"></a>
 ## Reproducción en Python
 
-Como parte de la verificación cruzada, se implementa un script en Python utilizando **Visual Studio Code**[cite: 1]:
+Como parte de la verificación cruzada, se implementa un script en Python utilizando Visual Studio Code[cite: 1]:
 - Definición de las funciones de transferencia para control y caso.
 - Simulación de la respuesta al impulso bajo los mismos parámetros de MATLAB[cite: 1].
 - Integración de las ganancias $k_P$, $k_I$ y $k_D$ obtenidas en Simulink para simular el lazo cerrado del caso[cite: 1].
@@ -265,22 +265,22 @@ flowchart TD
 <a id="actividades"></a>
 ## Actividades de la estudiante
 
-**1. Identificación del modelo mecánico:** Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
-2. Construcción de la analogía electromecánica:** Conversión del modelo mecánico en un circuito eléctrico equivalente utilizando la analogía fuerza-voltaje.
-3. Formulación de las ecuaciones del sistema:** Aplicación de las relaciones constitutivas y leyes de equilibrio para describir la dinámica del sistema musculoesquelético.
-4. Obtención de la función de transferencia:** Aplicación de la transformada de Laplace y el principio de superposición para determinar la función de transferencia para las condiciones de control y caso.
-5. Análisis del error en estado estacionario:** Determinación analítica de la respuesta final y evaluación del efecto producido por el incremento de $R$.
-6. Análisis de estabilidad:** Cálculo y representación de los polos en el plano complejo para determinar la estabilidad de cada modelo.
-7. Implementación en MATLAB/Simulink:** Construcción de los modelos por ecuaciones, función de transferencia y circuito equivalente en Simscape Electrical.
-8. Análisis de la respuesta en lazo abierto:** Determinación de la respuesta al impulso unitario y análisis de las características temporales ante la variación de $R$.
-9. Construcción del sistema de control:** Implementación del diagrama de bloques en Simulink utilizando la respuesta del individuo sano como referencia y agregando el controlador PID.
-10. Sintonización del controlador PID:** Ajuste de las ganancias $k_P$, $k_I$ y $k_D$ mediante la herramienta Tune para reducir el error con respecto a la referencia.
-11. Análisis de la respuesta en lazo cerrado:** Simulación y comparación de $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$.
-12. Análisis computacional mediante MATLAB:** Desarrollo del cuaderno computacional para ejecutar simulaciones, almacenar respuestas y exportar las figuras en formato PDF[cite: 1].
-13. Implementación mediante Python:** Programación de las funciones de transferencia y sistemas en lazo cerrado utilizando Visual Studio Code para corroborar los resultados[cite: 1].
-14. Verificación cruzada de los resultados:** Contrastación consistente entre las distintas implementaciones (Simulink, Simscape, MATLAB y Python)[cite: 1].
-15. Elaboración del diagrama biológico:** Creación de una ilustración en BioRender que relaciona los elementos del modelo con las estructuras anatómicas del sistema musculoesquelético[cite: 1].
-16. Documentación y resguardo de resultados:** Creación del repositorio en GitHub con la estructura organizada de archivos, el archivo README.md y el archivo CITATION.cff[cite: 1].
+1. Identificación del modelo mecánico: Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
+2. Construcción de la analogía electromecánica: Conversión del modelo mecánico en un circuito eléctrico equivalente utilizando la analogía fuerza-voltaje.
+3. Formulación de las ecuaciones del sistema: Aplicación de las relaciones constitutivas y leyes de equilibrio para describir la dinámica del sistema musculoesquelético.
+4. Obtención de la función de transferencia: Aplicación de la transformada de Laplace y el principio de superposición para determinar la función de transferencia para las condiciones de control y caso.
+5. Análisis del error en estado estacionario: Determinación analítica de la respuesta final y evaluación del efecto producido por el incremento de $R$.
+6. Análisis de estabilidad: Cálculo y representación de los polos en el plano complejo para determinar la estabilidad de cada modelo.
+7. Implementación en MATLAB/Simulink: Construcción de los modelos por ecuaciones, función de transferencia y circuito equivalente en Simscape Electrical.
+8. Análisis de la respuesta en lazo abierto: Determinación de la respuesta al impulso unitario y análisis de las características temporales ante la variación de $R$.
+9. Construcción del sistema de control: Implementación del diagrama de bloques en Simulink utilizando la respuesta del individuo sano como referencia y agregando el controlador PID.
+10. Sintonización del controlador PID: Ajuste de las ganancias $k_P$, $k_I$ y $k_D$ mediante la herramienta Tune para reducir el error con respecto a la referencia.
+11. Análisis de la respuesta en lazo cerrado: Simulación y comparación de $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$.
+12. Análisis computacional mediante MATLAB: Desarrollo del cuaderno computacional para ejecutar simulaciones, almacenar respuestas y exportar las figuras en formato PDF.
+13. Implementación mediante Python: Programación de las funciones de transferencia y sistemas en lazo cerrado utilizando Visual Studio Code para corroborar los resultados[cite: 1].
+14. Verificación cruzada de los resultados: Contrastación consistente entre las distintas implementaciones (Simulink, Simscape, MATLAB y Python)[cite: 1].
+15. Elaboración del diagrama biológico: Creación de una ilustración en BioRender que relaciona los elementos del modelo con las estructuras anatómicas del sistema musculoesquelético[cite: 1].
+16. Documentación y resguardo de resultados: Creación del repositorio en GitHub con la estructura organizada de archivos, el archivo README.md y el archivo CITATION.cff[cite: 1].
 
 [Volver al contenido](#contenido)
 
@@ -313,12 +313,12 @@ flowchart TD
 
 ### Software
 
-- **MATLAB** y **Simulink**, con el modelo y el cuaderno de referencia.
-- **Simscape Electrical**, para construir el circuito de componentes eléctricos.
-- Herramientas de Simulink para diseño y sintonización del bloque **PID Controller**.
-- **Python** y **Visual Studio Code** para ejecutar el programa suministrado.
+- MATLAB y Simulink, con el modelo y el cuaderno de referencia.
+- Simscape Electrical, para construir el circuito de componentes eléctricos.
+- Herramientas de Simulink para diseño y sintonización del bloque PID Controller.
+- Python y Visual Studio Code para ejecutar el programa suministrado.
 - Las bibliotecas Python que importe efectivamente el código de referencia.
-- **Git y GitHub** para organizar y presentar el repositorio de la práctica.
+- Git y GitHub para organizar y presentar el repositorio de la práctica.
 
 [Volver al contenido](#contenido)
 
