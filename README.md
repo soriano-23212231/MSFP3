@@ -265,22 +265,22 @@ flowchart TD
 <a id="actividades"></a>
 ## Actividades de la estudiante
 
-- [ ] **1. Identificación del modelo mecánico:** Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
-- [x] **2. Construcción de la analogía electromecánica:** Conversión del modelo mecánico en un circuito eléctrico equivalente utilizando la analogía fuerza-voltaje.
-- [x] **3. Formulación de las ecuaciones del sistema:** Aplicación de las relaciones constitutivas y leyes de equilibrio para describir la dinámica del sistema musculoesquelético.
-- [x] **4. Obtención de la función de transferencia:** Aplicación de la transformada de Laplace y el principio de superposición para determinar la función de transferencia para las condiciones de control y caso.
-- [x] **5. Análisis del error en estado estacionario:** Determinación analítica de la respuesta final y evaluación del efecto producido por el incremento de $R$.
-- [x] **6. Análisis de estabilidad:** Cálculo y representación de los polos en el plano complejo para determinar la estabilidad de cada modelo.
-- [x] **7. Implementación en MATLAB/Simulink:** Construcción de los modelos por ecuaciones, función de transferencia y circuito equivalente en Simscape Electrical.
-- [x] **8. Análisis de la respuesta en lazo abierto:** Determinación de la respuesta al impulso unitario y análisis de las características temporales ante la variación de $R$.
-- [x] **9. Construcción del sistema de control:** Implementación del diagrama de bloques en Simulink utilizando la respuesta del individuo sano como referencia y agregando el controlador PID.
-- [x] **10. Sintonización del controlador PID:** Ajuste de las ganancias $k_P$, $k_I$ y $k_D$ mediante la herramienta Tune para reducir el error con respecto a la referencia.
-- [x] **11. Análisis de la respuesta en lazo cerrado:** Simulación y comparación de $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$.
-- [x] **12. Análisis computacional mediante MATLAB:** Desarrollo del cuaderno computacional para ejecutar simulaciones, almacenar respuestas y exportar las figuras en formato PDF[cite: 1].
-- [x] **13. Implementación mediante Python:** Programación de las funciones de transferencia y sistemas en lazo cerrado utilizando Visual Studio Code para corroborar los resultados[cite: 1].
-- [x] **14. Verificación cruzada de los resultados:** Contrastación consistente entre las distintas implementaciones (Simulink, Simscape, MATLAB y Python)[cite: 1].
-- [x] **15. Elaboración del diagrama biológico:** Creación de una ilustración en BioRender que relaciona los elementos del modelo con las estructuras anatómicas del sistema musculoesquelético[cite: 1].
-- [x] **16. Documentación y resguardo de resultados:** Creación del repositorio en GitHub con la estructura organizada de archivos, el archivo README.md y el archivo CITATION.cff[cite: 1].
+**1. Identificación del modelo mecánico:** Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
+**2. Construcción de la analogía electromecánica:** Conversión del modelo mecánico en un circuito eléctrico equivalente utilizando la analogía fuerza-voltaje.
+**3. Formulación de las ecuaciones del sistema:** Aplicación de las relaciones constitutivas y leyes de equilibrio para describir la dinámica del sistema musculoesquelético.
+**4. Obtención de la función de transferencia:** Aplicación de la transformada de Laplace y el principio de superposición para determinar la función de transferencia para las condiciones de control y caso.
+**5. Análisis del error en estado estacionario:** Determinación analítica de la respuesta final y evaluación del efecto producido por el incremento de $R$.
+**6. Análisis de estabilidad:** Cálculo y representación de los polos en el plano complejo para determinar la estabilidad de cada modelo.
+**7. Implementación en MATLAB/Simulink:** Construcción de los modelos por ecuaciones, función de transferencia y circuito equivalente en Simscape Electrical.
+**8. Análisis de la respuesta en lazo abierto:** Determinación de la respuesta al impulso unitario y análisis de las características temporales ante la variación de $R$.
+**9. Construcción del sistema de control:** Implementación del diagrama de bloques en Simulink utilizando la respuesta del individuo sano como referencia y agregando el controlador PID.
+**10. Sintonización del controlador PID:** Ajuste de las ganancias $k_P$, $k_I$ y $k_D$ mediante la herramienta Tune para reducir el error con respecto a la referencia.
+**11. Análisis de la respuesta en lazo cerrado:** Simulación y comparación de $x_{\text{control}}(t)$, $x_{\text{caso}}(t)$ y $x_{\text{PID}}(t)$.
+**12. Análisis computacional mediante MATLAB:** Desarrollo del cuaderno computacional para ejecutar simulaciones, almacenar respuestas y exportar las figuras en formato PDF[cite: 1].
+**13. Implementación mediante Python:** Programación de las funciones de transferencia y sistemas en lazo cerrado utilizando Visual Studio Code para corroborar los resultados[cite: 1].
+**14. Verificación cruzada de los resultados:** Contrastación consistente entre las distintas implementaciones (Simulink, Simscape, MATLAB y Python)[cite: 1].
+**15. Elaboración del diagrama biológico:** Creación de una ilustración en BioRender que relaciona los elementos del modelo con las estructuras anatómicas del sistema musculoesquelético[cite: 1].
+**16. Documentación y resguardo de resultados:** Creación del repositorio en GitHub con la estructura organizada de archivos, el archivo README.md y el archivo CITATION.cff[cite: 1].
 
 ---
 
@@ -301,3 +301,58 @@ flowchart TD
     ├── control_caso_lazo_abierto.pdf
     ├── sistema_controlado_pid.pdf
     └── verificacion_python.pdf
+```
+
+[Volver al contenido](#contenido)
+
+---
+<a id="requisitos"></a>
+## Requisitos
+
+### Software
+
+- **MATLAB** y **Simulink**, con el modelo y el cuaderno de referencia.
+- **Simscape Electrical**, para construir el circuito de componentes eléctricos.
+- Herramientas de Simulink para diseño y sintonización del bloque **PID Controller**.
+- **Python** y **Visual Studio Code** para ejecutar el programa suministrado.
+- Las bibliotecas Python que importe efectivamente el código de referencia.
+- **Git y GitHub** para organizar y presentar el repositorio de la práctica.
+
+[Volver al contenido](#contenido)
+
+---
+<a id="reproducibilidad"></a>
+## Reproducibilidad y entregables
+
+### Secuencia de reproducción
+
+1. Consultar el [repositorio general de la asignatura](https://github.com/DrPaulValle/MSF-IBF1020) y descargar los materiales y archivos de referencia proporcionados para la práctica[cite: 1].
+2. Analizar el modelo mecánico simplificado del sistema musculoesquelético y su representación viscoelástica mediante elementos contráctiles, amortiguadores y resortes[cite: 1].
+3. Construir el circuito eléctrico equivalente utilizando la analogía fuerza-voltaje y verificar la selección de los valores para la condición de control y el caso de atrofia muscular[cite: 1].
+4. Desarrollar el análisis matemático inicial mediante el principio de superposición y la transformada de Laplace para obtener las funciones de transferencia de control y caso[cite: 1].
+5. Implementar y ejecutar las simulaciones en MATLAB/Simulink y Simscape Electrical evaluando la respuesta en lazo abierto[cite: 1].
+6. Construir el diagrama de bloques en Simulink para el sistema de control con retroalimentación, incorporando el controlador PID en la rama del caso[cite: 1].
+7. Sintonizar las ganancias $k_P$, $k_I$ y $k_D$ del controlador PID utilizando la herramienta Tune para aproximar la respuesta del caso a la referencia del individuo sano[cite: 1].
+8. Ejecutar el cuaderno computacional de MATLAB (`.mlx`) para simular los modelos, almacenar las respuestas en el *Workspace* y exportar las gráficas comparativas en formato PDF[cite: 1].
+9. Implementar las funciones de transferencia y el sistema en lazo cerrado en Python (utilizando Visual Studio Code) para corroborar y contrastar los resultados obtenidos en MATLAB[cite: 1].
+10. Elaborar el diagrama biológico en BioRender relacionando las estructuras anatómicas con los componentes del modelo mecánico y eléctrico[cite: 1].
+11. Organizar todas las evidencias, análisis, códigos, cuadernos y figuras en el repositorio de GitHub documentando los resultados en este archivo `README.md` junto con el archivo `CITATION.cff`[cite: 1].
+
+### Resultados mínimos esperados
+
+| Entregable | Evidencia solicitada |
+|---|---|
+| Análisis mecánico | Interpretación de elementos contráctiles, amortiguadores y resortes |
+| Analogía electromecánica | Conversión mediante la analogía fuerza-voltaje y equivalencias de parámetros |
+| Análisis matemático | Modelo de ecuaciones, aplicación de superposición y funciones de transferencia para control y caso |
+| Análisis de estabilidad y error | Localización de polos en el plano complejo y evaluación del error en estado estacionario |
+| Simulaciones *in silico* | Modelo en Simulink/Simscape Electrical y respuestas en lazo abierto |
+| Sistema de control y sintonización | Implementación del lazo de retroalimentación y obtención de ganancias PID con Tune |
+| Cuaderno de MATLAB | Cuaderno interactivo `.mlx`, su exportación a `.pdf` y almacenamiento de Workspace |
+| Verificación en Python | Script `.py` implementado en Visual Studio Code y validación cruzada de respuestas |
+| Diagrama biológico | Ilustración detallada elaborada en BioRender vinculando anatomía y modelo |
+| Documentación final | Archivo `README.md` completo, metadatos en `CITATION.cff` y repositorio organizado en GitHub |
+
+[Volver al contenido](#contenido)
+
+---
