@@ -265,7 +265,7 @@ flowchart TD
 <a id="actividades"></a>
 ## Actividades de la estudiante
 
-- [x] **1. Identificación del modelo mecánico:** Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
+- [ ] **1. Identificación del modelo mecánico:** Análisis de elementos contráctiles, amortiguadores, resortes y restricciones de fuerza y desplazamiento.
 - [x] **2. Construcción de la analogía electromecánica:** Conversión del modelo mecánico en un circuito eléctrico equivalente utilizando la analogía fuerza-voltaje.
 - [x] **3. Formulación de las ecuaciones del sistema:** Aplicación de las relaciones constitutivas y leyes de equilibrio para describir la dinámica del sistema musculoesquelético.
 - [x] **4. Obtención de la función de transferencia:** Aplicación de la transformada de Laplace y el principio de superposición para determinar la función de transferencia para las condiciones de control y caso.
