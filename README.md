@@ -148,8 +148,8 @@ Dado que el modelo mecánico transformado a su equivalente eléctrico mediante l
 2. **Función de transferencia:** Aplicando la transformada de Laplace con condiciones iniciales nulas y el principio de superposición, sumando ambas contribuciones ($`F_s(s) = F_{S1}(s) + F_{S2}(s)`$), se determina la función de transferencia del sistema expresada en términos de la fuerza transmitida respecto a la fuerza aplicada:
 
    $$
-   G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + 1 - \alpha}{R(C_p + C_s)s + 1}
-   $$
+G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + 1 - \alpha}{R(C_p + C_s)s + 1}
+$$
 
 3. Se obtienen de manera independiente las funciones de transferencia para la condición de **control** y de **caso**, sustituyendo sus respectivos parámetros ($`R`$, $`C_p`$ y $`C_s`$).
 
