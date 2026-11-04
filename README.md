@@ -129,10 +129,18 @@ La diferencia entre el individuo sano y el caso de atrofia muscular se modela me
 <a id="modelo"></a>
 ## Formulación matemática
 
-1. Ecuaciones de equilibrio y del sistema: A partir de las restricciones mecánicas del modelo de elementos en serie y paralelo, y aplicando las leyes constitutivas correspondientes, se obtienen las ecuaciones diferenciales ordinarias que rigen el desplazamiento y la fuerza transmitida.
-2. Función de transferencia: Aplicando la transformada de Laplace con condiciones iniciales nulas y el principio de superposición, se determina la función de transferencia del sistema expresada en términos del desplazamiento de salida respecto a la fuerza aplicada:
-   $$G(s) = \frac{X(s)}{F(s)}$$
-3. Se obtienen de manera independiente las funciones de transferencia para la condición de control y de caso sustituyendo sus respectivos parámetros paramétricos.
+Dado que el modelo mecánico transformado a su equivalente eléctrico mediante la analogía fuerza-voltaje contiene dos fuentes independientes ($F(t)$ y $F_0(t)$ con $F_0(t) = \alpha F(t)$), se aplica el **principio de superposición** para derivar el modelo dinámico[cite: 1, 13, 14].
+
+1. **Ecuaciones de equilibrio y del sistema:** A partir de las restricciones mecánicas del modelo de elementos en serie y paralelo, y aplicando las leyes constitutivas correspondientes, se obtienen las ecuaciones que rigen el comportamiento del circuito equivalente[cite: 1, 13, 14]. Analizando las mallas mediante superposición:
+   * **Circuito 1 (Apagando $F_0(t)$):**[cite: 13, 14]
+     $$F_{S1}(s) = \left( \frac{C_s R s + 1}{R(C_p + C_s)s + 1} \right) F(s)$$
+   * **Circuito 2 (Apagando la fuente principal $F(t)$):**[cite: 13, 14]
+     $$F_{S2}(s) = \left( \frac{-\alpha}{R(C_p + C_s)s + 1} \right) F(s)$$
+
+2. **Función de transferencia:** Aplicando la transformada de Laplace con condiciones iniciales nulas y el principio de superposición, sumando ambas contribuciones ($F_s(s) = F_{S1}(s) + F_{S2}(s)$), se determina la función de transferencia del sistema expresada en términos de la fuerza transmitida respecto a la fuerza aplicada[cite: 1, 13, 14]:
+   $$G(s) = \frac{F_s(s)}{F(s)} = \frac{C_s R s + 1 - \alpha}{R(C_p + C_s)s + 1}$$
+
+3. Se obtienen de manera independiente las funciones de transferencia para la condición de **control** y de **caso** sustituyendo sus respectivos parámetros paramétricos ($R$, $C_p$ y $C_s$)[cite: 1, 14].
 
 [Volver al contenido](#contenido)
 
